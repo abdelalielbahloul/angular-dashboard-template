@@ -13,6 +13,10 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzCommentModule } from 'ng-zorro-antd/comment';
 import { NzTransferModule } from 'ng-zorro-antd/transfer';
 import { NzMessageModule } from 'ng-zorro-antd/message';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 
 import {
   MenuFoldOutline,
@@ -35,7 +39,11 @@ const modules = [
   NzSwitchModule,
   NzCommentModule,
   NzTransferModule,
-  NzMessageModule
+  NzMessageModule,
+  NzFormModule,
+  NzInputModule,
+  NzTimePickerModule,
+  NzDatePickerModule
 ]
 
 @NgModule({
