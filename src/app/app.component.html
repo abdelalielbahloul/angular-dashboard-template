@@ -55,7 +55,9 @@
           </span>         
         </div>
         <div nz-col nzSpan="8" nzOffset="8" nzJustify="end" class="avatar-div">
-          <nz-avatar nz-dropdown [nzDropdownMenu]="menu" nzIcon="user" nzSize="large"></nz-avatar>
+          <nz-avatar nzIcon="user" nzSize="large"></nz-avatar>&nbsp;
+          <span nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click">User's name <i nz-icon nzType="down"></i></span>
+          
 
           <nz-dropdown-menu #menu="nzDropdownMenu">
             <ul nz-menu>
