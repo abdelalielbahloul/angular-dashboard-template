@@ -15,13 +15,15 @@ import { registerLocaleData } from '@angular/common';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { FormsComponent } from './components/forms/forms.component';
 
 registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

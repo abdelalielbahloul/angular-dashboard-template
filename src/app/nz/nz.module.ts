@@ -11,7 +11,8 @@ import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzCommentModule } from 'ng-zorro-antd/comment';
-
+import { NzTransferModule } from 'ng-zorro-antd/transfer';
+import { NzMessageModule } from 'ng-zorro-antd/message';
 
 import {
   MenuFoldOutline,
@@ -32,7 +33,9 @@ const modules = [
   NzCardModule,
   NzSkeletonModule,
   NzSwitchModule,
-  NzCommentModule
+  NzCommentModule,
+  NzTransferModule,
+  NzMessageModule
 ]
 
 @NgModule({
