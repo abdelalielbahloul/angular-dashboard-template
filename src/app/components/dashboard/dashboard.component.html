@@ -1,1 +1,45 @@
-<p>dashboard works!</p>
+<div nz-row>
+    <div nz-col nzSpan="10">
+        <nz-switch [(ngModel)]="loading"></nz-switch>
+        <nz-card style="width: 300px;margin-top: 16px" [nzLoading]="loading">
+            <nz-card-meta [nzAvatar]="avatarTemplate" nzTitle="Card title" nzDescription="This is the description"></nz-card-meta>
+        </nz-card>
+        <nz-card style="width: 300px;margin-top: 16px" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+            <nz-skeleton [nzActive]="true" [nzLoading]="loading" [nzAvatar]="{ size: 'large' }">
+            <nz-card-meta [nzAvatar]="avatarTemplate" nzTitle="Card title" nzDescription="This is the description"></nz-card-meta>
+            </nz-skeleton>
+        </nz-card>
+        <ng-template #avatarTemplate>
+            <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+        </ng-template>
+        <ng-template #actionSetting>
+            <i nz-icon nzType="setting"></i>
+        </ng-template>
+        <ng-template #actionEdit>
+            <i nz-icon nzType="edit"></i>
+        </ng-template>
+        <ng-template #actionEllipsis>
+            <i nz-icon nzType="ellipsis"></i>
+        </ng-template>
+    </div>
+    <div nz-col nzSpan="14">
+        <nz-comment nzAuthor="Han Solo" [nzDatetime]="time">
+            <nz-avatar nz-comment-avatar nzIcon="user" nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+            <nz-comment-content>
+            <p>
+                We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people
+                create their product prototypes beautifully and efficiently.
+            </p>
+            </nz-comment-content>
+            <nz-comment-action>
+            <i nz-tooltip nzTitle="Like" nz-icon nzType="like" [nzTheme]="likes > 0 ? 'twotone' : 'outline'" (click)="like()"></i>
+            <span class="count like">{{ likes }}</span>
+            </nz-comment-action>
+            <nz-comment-action>
+            <i nz-tooltip nzTitle="Dislike" nz-icon nzType="dislike" [nzTheme]="dislikes > 0 ? 'twotone' : 'outline'" (click)="dislike()"></i>
+            <span class="count dislike">{{ dislikes }}</span>
+            </nz-comment-action>
+            <nz-comment-action>Reply to</nz-comment-action>
+        </nz-comment>
+    </div>
+</div>

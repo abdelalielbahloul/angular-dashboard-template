@@ -7,6 +7,10 @@ import { NZ_ICONS } from 'ng-zorro-antd/icon';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
+import { NzCommentModule } from 'ng-zorro-antd/comment';
 
 
 import {
@@ -24,7 +28,11 @@ const modules = [
   NzBreadCrumbModule,
   NzAvatarModule,
   NzGridModule,
-  NzDropDownModule
+  NzDropDownModule,
+  NzCardModule,
+  NzSkeletonModule,
+  NzSwitchModule,
+  NzCommentModule
 ]
 
 @NgModule({

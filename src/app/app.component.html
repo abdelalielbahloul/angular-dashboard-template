@@ -16,7 +16,7 @@
         <i nz-icon nzType="dashboard"></i>
         <a routerLink="/dashboard">Dashboard</a>
       </li> -->
-      <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''" nzMatchRouter>
+      <li nz-menu-item nz-tooltip nzTooltipPlacement="right" nzTitle="Navigation One" nzMatchRouter>
         <i nz-icon nzType="dashboard"></i>
         <span><a routerLink="/dashboard">Dashboard</a></span>
       </li>
@@ -56,6 +56,7 @@
         </div>
         <div nz-col nzSpan="8" nzOffset="8" nzJustify="end" class="avatar-div">
           <nz-avatar nz-dropdown [nzDropdownMenu]="menu" nzIcon="user" nzSize="large"></nz-avatar>
+
           <nz-dropdown-menu #menu="nzDropdownMenu">
             <ul nz-menu>
               <li nz-menu-item>
@@ -79,6 +80,6 @@
         <router-outlet></router-outlet>
       </div>
     </nz-content>
-    <nz-footer>Copyright &copy; {{ now }} Implement By EL BAHLOUL Abdelali</nz-footer>
+    <nz-footer>Copyright &copy; {{ now }} By EL BAHLOUL Abdelali</nz-footer>
   </nz-layout>
 </nz-layout>
